@@ -1,5 +1,3 @@
-# Solubio
-
 # FIAP - Faculdade de Informática e Administração Paulista
 
 <p align="center">
@@ -8,28 +6,92 @@
 
 <br>
 
-# Nome do projeto
+# Chatbot Solubio
 
-## Nome do grupo
+## Grupo 67
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
+- <a href="https://www.linkedin.com/in/vittor-augusto/">Vitor Augusto Gomes</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">wqe</a>
 - <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a> 
 - <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a> 
 - <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
+- <a href="https://www.linkedin.com/in/lucas-gomes-moreira-15a8452a/">Lucas Gomes</a>
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
+- <a href="https://www.linkedin.com/in/profandregodoi/">André Godoi Chiovato</a>
 
 
 ## 📜 Descrição
 
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
+### Chatbot Dra. Jô ###
+O Projeto Solubio é uma solução de chatbot e backend que otimiza o atendimento ao cliente via WhatsApp, Telegram e website, usando NLP (Dialogflow) para interpretar mensagens e fornecer respostas automáticas. Com backend em Node.js e infraestrutura AWS, conecta interfaces de usuário com bancos de dados para gerenciar agendamentos e interações de forma eficiente.
 
+### Objetivo ###
+O projeto visa o desenvolvimento de uma solução integrada para atendimento e suporte automatizado, com foco em agendamentos e vendas. A solução utiliza diversas interfaces de usuário, como WhatsApp, Telegram e um website, para oferecer respostas rápidas e personalizadas, melhorando a experiência do usuário e aumentando a eficiência do atendimento.
+
+### Tecnologias Utilizadas ###
+* Frontend: Interfaces de usuário para WhatsApp, Telegram e website, que enviam mensagens dos usuários ao sistema.
+* NLP (Processamento de Linguagem Natural): Dialogflow, para interpretar as mensagens dos usuários, identificar intenções e fornecer respostas adequadas.
+* Backend (Server): Node.js para coordenar a lógica do sistema e integrar os dados entre o Dialogflow, o banco de dados e a infraestrutura AWS.
+* Banco de Dados:
+   MongoDB: Para armazenamento de informações estruturadas dos usuários, agendamentos e interações.
+   AWS RDS: Para gerenciamento de dados transacionais mais complexos.
+* Infraestrutura AWS:
+   AWS Lambda: Para execução de funções sob demanda, incluindo cálculos e envio de notificações.
+   AWS S3: Para armazenamento de arquivos estáticos, como conteúdos e relatórios.
+
+### Arquitetura da Solução ###
+1. Interfaces de Usuário:
+* WhatsApp, Telegram e Website: Canais de comunicação pelos quais os usuários interagem com o chatbot.
+2. Motor NLP (Dialogflow):
+* Interpreta as mensagens dos usuários, identificando intenções e enviando os dados para o backend.
+3. Backend (Server em Node.js):
+* Coordena a lógica do sistema, recebendo dados do Dialogflow, consultando MongoDB e AWS RDS, e interagindo com AWS Lambda e S3 para executar funções específicas.
+4. Banco de Dados:
+* MongoDB: Armazena dados estruturados dos usuários, agendamentos e histórico de interações.
+* AWS RDS: Gerencia dados transacionais complexos, conforme necessário.
+5. Infraestrutura AWS:
+* AWS Lambda: Executa funções específicas sob demanda.
+* AWS S3: Armazena arquivos estáticos necessários para o sistema.
+
+### Custos Previstos e Justificativa ###
+
+1. *Dialogflow (Google Cloud):*
+   - *Camada Gratuita:* Permite 1.000 solicitações por mês gratuitamente.
+   - *Custo Adicional:* Aproximadamente US$ 0,002 por solicitação adicional.
+   - *Justificativa:* Necessário para interpretar mensagens de usuários e fornecer respostas adequadas. O custo dependerá do volume de interações.
+
+2. *MongoDB (Atlas):*
+   - *Camada Gratuita:* Oferece até 512 MB de armazenamento.
+   - *Custo Adicional:* Planos começam a partir de US$ 9 por mês para maior capacidade.
+   - *Justificativa:* Armazena dados de pacientes, interações e agendamentos. A versão gratuita pode ser suficiente para MVPs.
+
+3. *AWS Lambda:*
+   - *Camada Gratuita:* 1 milhão de execuções gratuitas por mês.
+   - *Custo Adicional:* US$ 0,20 por milhão de solicitações adicionais.
+   - *Justificativa:* Executa funções sob demanda, garantindo escalabilidade e eficiência.
+
+4. *AWS S3:*
+   - *Camada Gratuita:* 5 GB de armazenamento gratuito por mês.
+   - *Custo Adicional:* US$ 0,023 por GB adicional.
+   - *Justificativa:* Armazena arquivos estáticos, como documentos e logs.
+
+5. *AWS RDS:*
+   - *Camada Gratuita:* 750 horas de uso gratuito por mês (durante 12 meses) e 20 GB de armazenamento.
+   - *Custo Adicional:* Planos começam a partir de US$ 15 por mês, dependendo do tipo de banco de dados.
+   - *Justificativa:* Gerencia transações e dados estruturados de forma robusta.
+
+6. *WhatsApp Business API:*
+   - *Camada Gratuita:* Não possui.
+   - *Custo Adicional:* Aproximadamente US$ 0,05 por mensagem.
+   - *Justificativa:* Necessário para comunicação direta com pacientes via WhatsApp.
+
+### Diagrama da Arquitetura ###
+
+docs/arquitetura.png
 
 ## 📁 Estrutura de pastas
 
@@ -49,23 +111,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
-
-
-## 🗃 Histórico de lançamentos
-
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
-    *
 
 ## 📋 Licença
 
