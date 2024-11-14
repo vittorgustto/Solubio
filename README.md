@@ -12,10 +12,10 @@
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/vittor-augusto/">Vitor Augusto Gomes</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">wqe</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">João Vitor Lopes Beiro</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Thyego Brandão</a> 
+- <a href="https://www.linkedin.com/company/inova-fusca">Lucas Gabriel Alves Costa</a> 
+- <a href="https://www.linkedin.com/company/inova-fusca">Vinícius Zeller Matias</a>
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
@@ -91,7 +91,8 @@ O projeto visa o desenvolvimento de uma solução integrada para atendimento e s
 
 ### Diagrama da Arquitetura ###
 
-document/arquitetura.png
+![Diagrama da Arquitetura](document/arquitetura.png)
+
 
 ## 📁 Estrutura de pastas
 
