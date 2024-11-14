@@ -91,7 +91,7 @@ O projeto visa o desenvolvimento de uma solução integrada para atendimento e s
 
 ### Diagrama da Arquitetura ###
 
-docs/arquitetura.png
+document/arquitetura.png
 
 ## 📁 Estrutura de pastas
 
